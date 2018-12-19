@@ -1,3 +1,8 @@
+/**
+ * 释：
+ * 以上三个是容器组件，作用是把展示组件连接到 Redux。
+ * 总之：只要记住一句话就可以了：UI展示组件负责 UI 的呈现，容器组件负责管理数据和逻辑。
+ */
 import { connect } from 'react-redux'
 import { toggleTodo } from '../actions'
 import TodoList from '../components/TodoList'
