@@ -4,7 +4,7 @@
  * 总之：只要记住一句话就可以了：UI展示组件负责 UI 的呈现，容器组件负责管理数据和逻辑。
  */
 import { connect } from 'react-redux'
-import { toggleTodo } from '../actions'
+import { toggleToDo } from '../actions'
 import TodoList from '../components/TodoList'
 import { visibilityFilters } from '../global'
 
@@ -28,7 +28,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-    toggleTodo: id => dispatch(toggleTodo(id))
+    toggleTodo: id => dispatch(toggleToDo(id))
 });
 
 export default connect(
